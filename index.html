@@ -11,7 +11,7 @@
       <div class="row text-center">
         <div class="col b-5"><h2>Temperature Converter</h2></div>
       </div>
-      <form action="Temprature Converter">
+      <form action="#">
         <div class="row text-center">
           <div class="col">
             <label for="celcious mb-3">Celsius</label>
@@ -36,7 +36,7 @@
           </div>
         </div>
       </form>
-      <h6 id="res pt-5">Please Enter the Value.</h6>
+      <h6 id="res" class="pt-3">Please Enter the Value.</h6>
     </div>
 
     <script>
@@ -50,7 +50,7 @@
             f = f.toFixed(4);
         }
         frh.value = f;
-        res.innerHTML = `The ${c} Celcious is Equal to ${frh.value} Fahrenheit.`;
+        res.innerText = `The ${c} Celsius is Equal to ${frh.value} Fahrenheit.`;
         });
         frh.addEventListener("input", function () {
         let f = this.value;
@@ -59,7 +59,7 @@
             c = c.toFixed(4);
         }
         cel.value = c;
-        res.innerHTML = `The ${f} Fahrenheit is Equal to ${cel.value} Celcious .`;
+        res.innerHTML = `The ${f} Fahrenheit is Equal to ${cel.value} Celsius .`;
         });
     </script>
 </body>
